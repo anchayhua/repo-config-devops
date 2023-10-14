@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-gateway-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: api-micro-function.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: api-micro-function-service
+            port:
+              number: 8080
+  - host: api-micro-reactive.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: api-micro-reactive-service
+            port:
+              number: 8080
