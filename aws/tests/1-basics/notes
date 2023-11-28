@@ -4,4 +4,4 @@
     alias tf="terraform"
 4. Providers
 5. Comandos init, fmt, plan, apply, destroy
-        tf apply -auto-aprove
+        tf apply -auto-approve
