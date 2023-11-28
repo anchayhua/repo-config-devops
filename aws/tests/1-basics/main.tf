@@ -9,12 +9,12 @@ terraform {
 
 provider "aws" {
   region     = "us-east-1"
-  access_key = "NO"
-  secret_key = "PE"
+  access_key = "quique"
+  secret_key = "quique"
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-011899242bb902164" # Ubuntu 20.04 LTS // us-east-1
+  ami           = "ami-0fc5d935ebf8bc3bc" # Ubuntu 22.04 LTS // us-east-1
   instance_type = "t2.micro"
-  subnet_id     = "subnet-024aa4fcf235ba614"
+  # subnet_id     = "subnet-024aa4fcf235ba614"
 }
