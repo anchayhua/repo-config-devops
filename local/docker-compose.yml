@@ -1,0 +1,48 @@
+version: '3.5'
+services:
+    api-funtion:
+        container_name: api-funtion
+        build:
+            context: ../../api-micro-function
+        image: anchayhua/api-funtion:latest
+        ports:
+            - 8081:8081
+        networks:
+            - devops-network
+    api-reactive:
+        container_name: api-reactive
+        build:
+            context: ../../api-micro-reactive
+        image: anchayhua/api-reactive:latest
+        ports:
+            - 8082:8082
+        networks:
+            - devops-network
+    api-gateway:
+        container_name: api-gateway
+        build:
+            context: ../../api-cloud-gateway
+        image: anchayhua/api-gateway:latest
+        ports:
+            - 8080:8080
+        networks:
+            - devops-network
+        depends_on:
+            api-funtion:
+                condition: service_started
+            api-reactive:
+                condition: service_started
+    filebeat:
+        image: docker.elastic.co/beats/filebeat:8.0.0
+        container_name: filebeat
+        volumes:
+            - ./filebeat.yml:/usr/share/filebeat/filebeat.yml
+            - /var/lib/docker/containers:/var/lib/docker/containers:ro
+            - /var/run/docker.sock:/var/run/docker.sock
+        networks:
+            - devops-network
+        depends_on:
+            - api-funtion
+            - api-reactive
+networks:
+    devops-network: {}
