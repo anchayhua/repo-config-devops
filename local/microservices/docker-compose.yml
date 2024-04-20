@@ -3,7 +3,7 @@ services:
     api-funtion:
         container_name: api-funtion
         build:
-            context: ../../api-micro-function
+            context: ../../../api-micro-function
         image: anchayhua/api-funtion:latest
         ports:
             - 8081:8081
@@ -12,7 +12,7 @@ services:
     api-reactive:
         container_name: api-reactive
         build:
-            context: ../../api-micro-reactive
+            context: ../../../api-micro-reactive
         image: anchayhua/api-reactive:latest
         ports:
             - 8082:8082
@@ -21,7 +21,7 @@ services:
     api-gateway:
         container_name: api-gateway
         build:
-            context: ../../api-cloud-gateway
+            context: ../../../api-cloud-gateway
         image: anchayhua/api-gateway:latest
         ports:
             - 8080:8080
@@ -33,10 +33,11 @@ services:
             api-reactive:
                 condition: service_started
     filebeat:
-        image: docker.elastic.co/beats/filebeat:8.0.0
+        image: docker.elastic.co/beats/filebeat:7.6.2
+        # image: filebeat:7.16.2
         container_name: filebeat
         volumes:
-            - ./filebeat.yml:/usr/share/filebeat/filebeat.yml
+            - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
             - /var/lib/docker/containers:/var/lib/docker/containers:ro
             - /var/run/docker.sock:/var/run/docker.sock
         networks:
@@ -46,3 +47,5 @@ services:
             - api-reactive
 networks:
     devops-network: {}
+
+# Ejecutar para permiso: chmod go-w filebeat.yml
