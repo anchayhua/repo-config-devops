@@ -1,7 +1,28 @@
 filebeat.inputs:
-  - type: container
-    paths:
-      - '/var/lib/docker/containers/*/*.log'
+- type: container
+  # id: my-filestream-id
+  enabled: true
+  paths:
+    - '/var/lib/docker/containers/*/*.log'
 
+# ============================== Filebeat modules ==============================
+
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: true
+
+# ------------------------------ Logstash Output -------------------------------
 output.logstash:
-  hosts: ['logstash:5044']
+  hosts: ["localhost:5044"]
+
+
+# filebeat.inputs:
+#   - type: container
+#     paths:
+#       - '/var/lib/docker/containers/*/*.log'
+
+# output.logstash:
+#   hosts: ['logstash:5044']
+
+
+# # Ejecutar para permiso: chmod go-w filebeat.yml
