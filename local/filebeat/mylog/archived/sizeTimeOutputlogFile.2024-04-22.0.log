@@ -1,0 +1,73 @@
+[2024-04-22 21:13:50] [api-micro-reactive] INFO  [c.q.apireactive.ApiReactiveApplication] org.springframework.boot.StartupInfoLogger : Starting ApiReactiveApplication v0.0.1-SNAPSHOT using Java 17-ea with PID 1 (/app/app.jar started by root in /app)
+[2024-04-22 21:13:50] [api-micro-reactive] INFO  [c.q.apireactive.ApiReactiveApplication] org.springframework.boot.SpringApplication : No active profile set, falling back to 1 default profile: "default"
+[2024-04-22 21:13:54] [api-micro-reactive] INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8082 (http)
+[2024-04-22 21:13:54] [api-micro-reactive] INFO  [o.apache.coyote.http11.Http11NioProtocol] org.apache.juli.logging.DirectJDKLog : Initializing ProtocolHandler ["http-nio-8082"]
+[2024-04-22 21:13:54] [api-micro-reactive] INFO  [o.apache.catalina.core.StandardService] org.apache.juli.logging.DirectJDKLog : Starting service [Tomcat]
+[2024-04-22 21:13:54] [api-micro-reactive] INFO  [org.apache.catalina.core.StandardEngine] org.apache.juli.logging.DirectJDKLog : Starting Servlet engine: [Apache Tomcat/10.1.13]
+[2024-04-22 21:13:54] [api-micro-reactive] INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] org.apache.juli.logging.DirectJDKLog : Initializing Spring embedded WebApplicationContext
+[2024-04-22 21:13:54] [api-micro-reactive] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3586 ms
+[2024-04-22 21:13:56] [api-micro-reactive] INFO  [o.apache.coyote.http11.Http11NioProtocol] org.apache.juli.logging.DirectJDKLog : Starting ProtocolHandler ["http-nio-8082"]
+[2024-04-22 21:13:56] [api-micro-reactive] INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8082 (http) with context path ''
+[2024-04-22 21:13:56] [api-micro-reactive] INFO  [c.q.apireactive.ApiReactiveApplication] org.springframework.boot.StartupInfoLogger : Started ApiReactiveApplication in 7.012 seconds (process running for 9.219)
+[2024-04-22 21:14:39] [api-micro-reactive] INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] org.apache.juli.logging.DirectJDKLog : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-04-22 21:14:39] [api-micro-reactive] INFO  [o.s.web.servlet.DispatcherServlet] org.springframework.web.servlet.FrameworkServlet : Initializing Servlet 'dispatcherServlet'
+[2024-04-22 21:14:39] [api-micro-reactive] INFO  [o.s.web.servlet.DispatcherServlet] org.springframework.web.servlet.FrameworkServlet : Completed initialization in 1 ms
+[2024-04-22 21:14:39] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 21:14:39] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 21:14:39] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 21:14:41] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 21:14:41] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 21:14:41] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 21:14:41] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 21:14:41] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 21:14:41] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 21:15:47] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 21:15:47] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 21:15:47] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 21:15:48] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 21:15:48] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 21:15:48] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 21:16:02] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 21:16:02] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 21:16:02] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:16:14] [api-micro-reactive] INFO  [c.q.apireactive.ApiReactiveApplication] org.springframework.boot.StartupInfoLogger : Starting ApiReactiveApplication v0.0.1-SNAPSHOT using Java 17-ea with PID 1 (/app/app.jar started by root in /app)
+[2024-04-22 22:16:14] [api-micro-reactive] INFO  [c.q.apireactive.ApiReactiveApplication] org.springframework.boot.SpringApplication : No active profile set, falling back to 1 default profile: "default"
+[2024-04-22 22:16:17] [api-micro-reactive] INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8082 (http)
+[2024-04-22 22:16:17] [api-micro-reactive] INFO  [o.apache.coyote.http11.Http11NioProtocol] org.apache.juli.logging.DirectJDKLog : Initializing ProtocolHandler ["http-nio-8082"]
+[2024-04-22 22:16:17] [api-micro-reactive] INFO  [o.apache.catalina.core.StandardService] org.apache.juli.logging.DirectJDKLog : Starting service [Tomcat]
+[2024-04-22 22:16:17] [api-micro-reactive] INFO  [org.apache.catalina.core.StandardEngine] org.apache.juli.logging.DirectJDKLog : Starting Servlet engine: [Apache Tomcat/10.1.13]
+[2024-04-22 22:16:18] [api-micro-reactive] INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] org.apache.juli.logging.DirectJDKLog : Initializing Spring embedded WebApplicationContext
+[2024-04-22 22:16:18] [api-micro-reactive] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3590 ms
+[2024-04-22 22:16:20] [api-micro-reactive] INFO  [o.apache.coyote.http11.Http11NioProtocol] org.apache.juli.logging.DirectJDKLog : Starting ProtocolHandler ["http-nio-8082"]
+[2024-04-22 22:16:20] [api-micro-reactive] INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8082 (http) with context path ''
+[2024-04-22 22:16:20] [api-micro-reactive] INFO  [c.q.apireactive.ApiReactiveApplication] org.springframework.boot.StartupInfoLogger : Started ApiReactiveApplication in 6.864 seconds (process running for 9.251)
+[2024-04-22 22:16:52] [api-micro-reactive] INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] org.apache.juli.logging.DirectJDKLog : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-04-22 22:16:52] [api-micro-reactive] INFO  [o.s.web.servlet.DispatcherServlet] org.springframework.web.servlet.FrameworkServlet : Initializing Servlet 'dispatcherServlet'
+[2024-04-22 22:16:52] [api-micro-reactive] INFO  [o.s.web.servlet.DispatcherServlet] org.springframework.web.servlet.FrameworkServlet : Completed initialization in 1 ms
+[2024-04-22 22:16:52] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:16:52] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:16:52] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:17:28] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:17:30] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:17:30] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:17:30] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
+[2024-04-22 22:17:30] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:17:30] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:17:30] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive

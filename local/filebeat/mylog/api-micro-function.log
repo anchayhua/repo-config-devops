@@ -1,0 +1,34 @@
+[2024-04-22 22:16:14] [api-micro-function] INFO  [c.q.apifuntion.ApiFuntionApplication] org.springframework.boot.StartupInfoLogger : Starting ApiFuntionApplication v0.0.1-SNAPSHOT using Java 17-ea with PID 1 (/app/app.jar started by root in /app)
+[2024-04-22 22:16:14] [api-micro-function] INFO  [c.q.apifuntion.ApiFuntionApplication] org.springframework.boot.SpringApplication : No active profile set, falling back to 1 default profile: "default"
+[2024-04-22 22:16:19] [api-micro-function] INFO  [o.s.b.web.embedded.netty.NettyWebServer] org.springframework.boot.web.embedded.netty.NettyWebServer : Netty started on port 8081
+[2024-04-22 22:16:19] [api-micro-function] INFO  [c.q.apifuntion.ApiFuntionApplication] org.springframework.boot.StartupInfoLogger : Started ApiFuntionApplication in 5.705 seconds (process running for 8.271)
+[2024-04-22 22:17:25] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:25] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:25] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:17:27] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:27] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:27] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:17:27] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:27] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:27] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:17:27] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:27] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:27] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:17:29] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:29] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:29] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:17:29] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:29] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:29] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:17:29] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:29] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:29] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:17:31] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:31] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:31] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:17:31] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:17:31] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:17:31] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function
+[2024-04-22 22:19:26] [api-micro-function] INFO  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an info message from Function
+[2024-04-22 22:19:26] [api-micro-function] WARN  [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is a warning message from Function
+[2024-04-22 22:19:26] [api-micro-function] ERROR [com.quique.apifuntion.MyController] com.quique.apifuntion.MyController : This is an error message from Function

@@ -9,6 +9,8 @@ services:
         #     - 8081:8081
         networks:
             - devops-network
+        volumes:
+            - /var/log/devops:/var/log/devops
     api-reactive:
         container_name: api-reactive
         build:
@@ -18,6 +20,8 @@ services:
         #     - 8082:8082
         networks:
             - devops-network
+        volumes:
+            - /var/log/devops:/var/log/devops
     api-gateway:
         container_name: api-gateway
         build:

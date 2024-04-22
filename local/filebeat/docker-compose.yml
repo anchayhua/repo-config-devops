@@ -1,24 +1,56 @@
-version: "3.5"
+version: '3.5'
 services:
   filebeat:
-    hostname: filebeat
-# ** Here to build the image, you need to specify your own docker hub account :
-    image: anchayhua/filebeat:latest
-    build:
-      context: ./filebeat
-#Deploy is needed if you want to deploy in a Swarm
+    user: root
+    container_name: filebeat
+    image: docker.elastic.co/beats/filebeat:8.13.2
+    volumes:
+      - /var/run/docker.sock:/host_docker/docker.sock
+      - /var/lib/docker:/host_docker/var/lib/docker
+      # - ./mylog:/usr/share/filebeat/mylog
+      - /var/log/devops:/usr/share/filebeat/mylog
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml
+    command: ["--strict.perms=false"]
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    stdin_open: true
+    tty: true
+    network_mode: bridge
+    # networks:
+    #         - devops-network
     deploy:
       mode: global
-      restart_policy:
-        condition: on-failure
-    volumes:
-        # needed to persist filebeat tracking data :
-        - "filebeat_data:/usr/share/filebeat/data:rw"
-        # needed to access all docker logs (read only) :
-        - "/var/lib/docker/containers:/usr/share/dockerlogs/data:ro"
-        # needed to access additional informations about containers
-        - "/var/run/docker.sock:/var/run/docker.sock"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "50"
 
-volumes:
-# create a persistent volume for Filebeat
-  filebeat_data:
+
+
+# version: "3.5"
+# services:
+#   filebeat:
+#     hostname: filebeat
+# # ** Here to build the image, you need to specify your own docker hub account :
+#     image: anchayhua/filebeat:latest
+#     build:
+#       context: ./filebeat
+# #Deploy is needed if you want to deploy in a Swarm
+#     deploy:
+#       mode: global
+#       restart_policy:
+#         condition: on-failure
+#     volumes:
+#         # needed to persist filebeat tracking data :
+#         - "filebeat_data:/usr/share/filebeat/data:rw"
+#         # needed to access all docker logs (read only) :
+#         - "/var/lib/docker/containers:/usr/share/dockerlogs/data:ro"
+#         # needed to access additional informations about containers
+#         - "/var/run/docker.sock:/var/run/docker.sock"
+
+# volumes:
+# # create a persistent volume for Filebeat
+#   filebeat_data:

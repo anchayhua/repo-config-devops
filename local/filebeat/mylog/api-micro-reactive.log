@@ -1,0 +1,3 @@
+[2024-04-22 22:19:24] [api-micro-reactive] INFO  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an info message from Reactive
+[2024-04-22 22:19:24] [api-micro-reactive] WARN  [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is a warning message from Reactive
+[2024-04-22 22:19:24] [api-micro-reactive] ERROR [com.quique.apireactive.MyTestController] com.quique.apireactive.MyTestController : This is an error message from Reactive
