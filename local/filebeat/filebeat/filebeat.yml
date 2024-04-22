@@ -1,0 +1,29 @@
+filebeat.inputs:
+  - type: docker
+    containers.ids: '*'
+    processors:
+      - add_docker_metadata: ~
+    paths:
+      - '/var/lib/docker/containers/*/*.log'
+    # multiline:
+    #   pattern: '^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}'
+    #   negate: true
+    #   match: after
+ 
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: true
+
+# setup.template.settings:
+#   index.number_of_shards: 3
+
+output.logstash:
+  hosts: ["192.168.1.37:5044"]
+
+# # Write Filebeat own logs only to file to avoid catching them with itself in docker log files
+# logging.to_files: true
+# logging.to_syslog: false
+
+# # X-pack optional module
+# xpack.monitoring.enabled: true
+# xpack.monitoring.elasticsearch: X
