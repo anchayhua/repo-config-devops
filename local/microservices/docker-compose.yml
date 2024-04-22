@@ -35,19 +35,20 @@ services:
         environment:
             - FUNCTION_ROUTE_URI=http://api-funtion:8081
             - REACTIVE_ROUTE_URI=http://api-reactive:8082
-    # filebeat:
-    #     image: docker.elastic.co/beats/filebeat:7.6.2
-    #     # image: filebeat:7.16.2
-    #     container_name: filebeat
-    #     volumes:
-    #         - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
-    #         - /var/lib/docker/containers:/var/lib/docker/containers:ro
-    #         - /var/run/docker.sock:/var/run/docker.sock
-    #     networks:
-    #         - devops-network
-    #     depends_on:
-    #         - api-funtion
-    #         - api-reactive
+    filebeat:
+        # image: filebeat:7.16.2
+        # image: docker.elastic.co/beats/filebeat:7.6.2
+        image: docker.elastic.co/beats/filebeat:8.13.2
+        container_name: filebeat
+        volumes:
+            - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+            - /var/lib/docker/containers:/var/lib/docker/containers:ro
+            - /var/run/docker.sock:/var/run/docker.sock
+        networks:
+            - devops-network
+        depends_on:
+            - api-funtion
+            - api-reactive
 networks:
     devops-network: {}
 

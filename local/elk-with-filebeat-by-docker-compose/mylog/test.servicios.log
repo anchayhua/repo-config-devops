@@ -1,0 +1,10 @@
+2024-04-21T19:17:04.471-05:00  INFO 42843 --- [           main] c.q.apifuntion.ApiFuntionApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-04-21T19:17:05.556-05:00  INFO 42843 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2024-04-21T19:17:05.562-05:00  INFO 42843 --- [           main] c.q.apifuntion.ApiFuntionApplication     : Started ApiFuntionApplication in 1.381 seconds (process running for 1.612)
+2024-04-21T19:17:06.331-05:00  INFO 42843 --- [readScheduler-1] com.quique.apifuntion.MyController       : This is an info message from Function
+2024-04-21T19:17:06.331-05:00  WARN 42843 --- [readScheduler-1] com.quique.apifuntion.MyController       : This is a warning message from Function
+2024-04-21T19:17:06.331-05:00 ERROR 42843 --- [readScheduler-1] com.quique.apifuntion.MyController       : This is an error message from Function
+2024-04-21T19:17:07.331-05:00  INFO 42843 --- [readScheduler-1] com.quique.apifuntion.MyController       : This is an info message from Function msmdsmds
+2024-04-21T19:17:07.331-05:00  INFO 42843 --- [readScheduler-1] com.quique.apifuntion.MyController       : This is an info message from Function msmdsmds
+2024-04-21T19:17:07.331-05:00 ERROR 42843 --- [readScheduler-1] com.quique.apifuntion.MyController       : This is an error message from Function 2
+
