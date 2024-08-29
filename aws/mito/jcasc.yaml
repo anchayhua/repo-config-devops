@@ -1,0 +1,19 @@
+jenkins:
+  systemMessage: "Jenkins configurado automáticamente por Jenkins Configuration as Code plugin"
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "admin"
+          password: "#jbcrypt:$2a$12$wwb1w3Igp0AXgPZYLTTZP.MpvQOCqdT8McUj0032gFHNJlacKsmZa"
+          # password: "#jbcrypt:$2a$10$n42DD5lyaOW6rkVVOws9qOSZ2WHm0joIlw0d9SccrMJaQXKsxVyk6"
+# jobs:
+#   - script: >
+#       multibranchPipelineJob('petclinic-rest') {
+#           branchSources {
+#               git {
+#                   id = 'petclinic-rest'
+#                   remote('https://github.com/devops-mitocode/spring-petclinic-rest.git')
+#               }
+#           }
+#       }
